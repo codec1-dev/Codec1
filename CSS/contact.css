@@ -1,0 +1,88 @@
+/* 🌟 Contact Page Styles */
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background: #121212;
+  padding: 40px;
+}
+
+/* Contact Form Card */
+.contact-card {
+  background: #1A1A2E;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0px 4px 10px rgba(0, 255, 255, 0.2);
+}
+
+/* Heading */
+.contact-card h1 {
+  font-size: 26px;
+  color: #00FFFF; /* Neon Blue */
+  margin-bottom: 15px;
+}
+
+.contact-card p {
+  font-size: 14px;
+  color: #B0B3B8;
+  margin-bottom: 20px;
+}
+
+/* 🌟 Input Fields */
+.input-group {
+  margin-bottom: 15px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  transition: all 0.3s;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* 🌟 Input Focus Effect */
+input:focus,
+textarea:focus {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 0px 8px #00FFFF;
+}
+
+/* 🌟 Submit Button */
+.btn {
+  background: #00FF99;
+  color: black;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #FACC15;
+}
+
+/* 🌟 Responsive Design */
+@media (max-width: 768px) {
+  .contact-card {
+      width: 90%;
+      padding: 30px;
+  }
+}
