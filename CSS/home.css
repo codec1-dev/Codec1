@@ -1,0 +1,63 @@
+/* 🌟 Blog List */
+.blog-list {
+  max-width: 900px; /* Sets a max width to center content */
+  margin: auto;
+  padding: 20px;
+}
+
+/* 🌟 Individual Blog Post */
+.post {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effect */
+.post:hover {
+  transform: scale(1.02);
+}
+
+/* Left-side image */
+.post img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* Right-side text */
+.post-info {
+  text-align: left;
+  flex: 1;
+}
+
+/* Blog title */
+.post-info h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+/* Blog title link */
+.post-info a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Blog title hover effect */
+.post-info a:hover {
+  color: #FACC15;
+}
+
+/* Blog preview text */
+.post-preview {
+  font-size: 16px;
+  margin-top: 8px;
+  color: #E4E4E7;
+}

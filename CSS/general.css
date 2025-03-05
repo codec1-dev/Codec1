@@ -1,0 +1,261 @@
+/* 🌟 General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #2980B9;
+  /* Modern blue background */
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* 🌟 Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1C2833;
+  padding: 15px 50px;
+}
+
+/* Logo & Title */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+}
+
+.logo img {
+  height: 50px;
+  border-radius: 50%;
+}
+
+.logo h1 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #F8FAFC;
+  margin: 0;
+}
+
+/* 🌟 Navigation Menu */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #FACC15;
+}
+
+/* 🌟 Dropdown Menu */
+nav ul li .dropdown {
+  display: none;
+  position: absolute;
+  background: #9CA3AF;
+  list-style: none;
+  padding: 10px;
+  border-radius: 15px;
+  width: 180px;
+  top: 100%;
+  left: 0;
+}
+
+nav ul li:hover .dropdown {
+  display: block;
+}
+
+nav ul li .dropdown li {
+  padding: 8px 10px;
+}
+
+nav ul li .dropdown li a {
+  color: white;
+  display: block;
+}
+
+nav ul li .dropdown li a:hover {
+  color: #FACC15;
+}
+
+/* 🌟 Search Bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 5px;
+}
+
+.search-bar input {
+  border: none;
+  padding: 8px;
+  outline: none;
+  width: 150px;
+  font-size: 14px;
+}
+
+.search-bar button {
+  background: #FACC15;
+  border: none;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+/* 🌟 Subheading */
+.subheading {
+  font-size: 20px;
+  margin: 20px auto;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* 🌟 Footer */
+footer {
+  background: #1A1A2E;
+  color: #E4E4E7;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Footer Container */
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Footer Columns */
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+  padding: 15px;
+  text-align: left;
+}
+
+.footer-column h3 {
+  color: #00FFFF; /* Neon Blue */
+  margin-bottom: 15px;
+}
+
+.footer-column p, .footer-column ul {
+  color: #B0B3B8;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #00FF99; /* Neon Green */
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #FACC15;
+}
+
+/* Social Media Icons */
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.social-icons img {
+  width: 30px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.1);
+}
+
+/* Email Subscription */
+.subscribe-form {
+  display: block;
+  gap: 10px;
+  margin-top: 45px;
+}
+
+.subscribe-form input {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 14px;
+  flex-grow: 1;
+}
+
+.subscribe-form button {
+  background: #00FF99;
+  border: none;
+  padding: 8px 15px;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.subscribe-form button:hover {
+  background: #FACC15;
+}
+
+/* Copyright Section */
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #9CA3AF;
+}
+
+/* 🌟 Back to Top Button */
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #00FFFF;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  display: none; /* Hidden by default */
+}
+
+#backToTop:hover {
+  transform: scale(1.1);
+}
+
+/* 🌟 Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      text-align: center;
+  }
+}

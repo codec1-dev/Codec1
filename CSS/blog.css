@@ -1,0 +1,14 @@
+/* 🌟 Blog Content */
+.blog-content {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #2D3142;
+  border-radius: 10px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.blog-content img {
+  width: 100%;
+  border-radius: 10px;
+}
