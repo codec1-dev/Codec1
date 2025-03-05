@@ -12,6 +12,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.body.appendChild(toggleButton);
 
+  toggleButton.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+  });
+});
 
 // Dark Mode Styles
 const darkModeCSS = document.createElement("style");
