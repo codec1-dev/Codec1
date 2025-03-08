@@ -1,4 +1,4 @@
-/* 🌟 General Styles */
+/*🌟 General Styles*/
 body {
   font-family: 'Poppins', sans-serif;
   background: #2980B9;
@@ -52,26 +52,29 @@ nav ul li {
 }
 
 nav ul li a {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5rem;
   text-decoration: none;
   color: white;
-  font-weight: bold;
+  font-weight: 600;
   padding: 10px 15px;
   transition: color 0.3s;
 }
 
 nav ul li a:hover {
-  color: #FACC15;
+  color: #00f7ff;
 }
 
 /* 🌟 Dropdown Menu */
 nav ul li .dropdown {
   display: none;
   position: absolute;
-  background: #9CA3AF;
+  background: #1C2833;
   list-style: none;
   padding: 10px;
+  margin-top: 15px;
   border-radius: 15px;
-  width: 180px;
+  width: 200px;
   top: 100%;
   left: 0;
 }
@@ -91,6 +94,33 @@ nav ul li .dropdown li a {
 
 nav ul li .dropdown li a:hover {
   color: #FACC15;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #00f7ff;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #00f7ff;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
 }
 
 /* 🌟 Search Bar */
@@ -152,11 +182,13 @@ footer {
 }
 
 .footer-column h3 {
-  color: #00FFFF; /* Neon Blue */
+  color: #00FFFF;
+  /* Neon Blue */
   margin-bottom: 15px;
 }
 
-.footer-column p, .footer-column ul {
+.footer-column p,
+.footer-column ul {
   color: #B0B3B8;
 }
 
@@ -171,7 +203,8 @@ footer {
 
 .footer-column ul li a {
   text-decoration: none;
-  color: #00FF99; /* Neon Green */
+  color: #00FF99;
+  /* Neon Green */
   transition: color 0.3s;
 }
 
@@ -245,7 +278,8 @@ footer {
   font-size: 20px;
   cursor: pointer;
   transition: transform 0.3s ease;
-  display: none; /* Hidden by default */
+  display: none;
+  /* Hidden by default */
 }
 
 #backToTop:hover {
@@ -255,7 +289,7 @@ footer {
 /* 🌟 Responsive Design */
 @media (max-width: 768px) {
   .footer-container {
-      flex-direction: column;
-      text-align: center;
+    flex-direction: column;
+    text-align: center;
   }
 }
