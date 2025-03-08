@@ -126,23 +126,23 @@
     <div class="blog-actions">
       <button class="like-btn"><i class="fa fa-thumbs-up"></i> Like</button>
       <button class="comment-btn"><i class="fa fa-comment"></i> Comment</button>
-      <button class="share-btn"><i class="fa fa-share"></i> Share</button>
+
+      <!-- Share Button with Dropdown -->
+      <div class="share-container">
+        <button class="share-btn" id="share-toggle"><i class="fa fa-share"></i> Share</button>
+        <div class="share-dropdown" id="share-dropdown">
+          <button class="copy-link" onclick="copyPermalink()"><i class="fa fa-link"></i></button>
+          <a href="#" class="share-option twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="share-option reddit" target="_blank"><i class="fab fa-reddit"></i></a>
+          <a href="#" class="share-option linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="#" class="share-option hackernews" target="_blank"><i class="fab fa-hacker-news"></i></a>
+          <a href="#" class="share-option facebook" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="share-option whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
     </div>
 
-    <!-- 🌟 Social Share Buttons -->
-    <div class="social-share">
-      <span>Share:</span>
-      <a href="https://twitter.com/intent/tweet?text=How%20to%20Master%20JavaScript%20in%202025%20-%20https://www.codec1.com/blogs/how-to-master-javascript.html"
-        target="_blank" class="social-btn twitter"><i class="fab fa-twitter"></i></a>
-      <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.codec1.com/blogs/how-to-master-javascript.html"
-        target="_blank" class="social-btn linkedin"><i class="fab fa-linkedin"></i></a>
-      <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.codec1.com/blogs/how-to-master-javascript.html"
-        target="_blank" class="social-btn facebook"><i class="fab fa-facebook"></i></a>
-      <a href="https://api.whatsapp.com/send?text=Check%20out%20this%20JavaScript%20guide:%20https://www.codec1.com/blogs/how-to-master-javascript.html"
-        target="_blank" class="social-btn whatsapp"><i class="fab fa-whatsapp"></i></a>
-      <a href="https://www.instagram.com/" target="_blank" class="social-btn instagram"><i
-          class="fab fa-instagram"></i></a>
-    </div>
+
 
     <!-- 🌟 Call to Action -->
     <div class="cta">
@@ -151,12 +151,12 @@
     </div>
   </main>
 
-
-
   <!-- 🌟 Blog Footer -->
   <footer class="blog-footer">
     <p>© 2025 Codec1 | <a href="../index.html">Home</a> | <a href="../contact.html">Contact</a></p>
   </footer>
+
+  <script src="/JS/blog.js"></script>
 </body>
 
 </html>

@@ -36,10 +36,10 @@ body {
 
 /* 🌟 Table of Contents */
 .toc {
-  text-align: center;
-  margin: 20px 350px;
-  background: #0a0a0a;
-  padding: auto;
+  max-width: 600px; /* Set max width for better readability */
+  margin: 20px auto; /* Centering */
+  background: #111; 
+  padding: 20PX;
   border-radius: 8px;
   box-shadow: 0px 4px 10px rgba(0, 247, 255, 0.2);
 }
@@ -130,55 +130,6 @@ body {
   background: #00c4cc;
 }
 
-
-
-/* 🌟 Social Share Buttons */
-.social-share {
-  margin-top: 10px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.social-share span {
-  font-weight: bold;
-  color: #ccc;
-}
-
-.social-btn {
-  display: inline-block;
-  font-size: 1.2rem;
-  padding: 8px;
-  border-radius: 50%;
-  color: white;
-  transition: 0.3s;
-}
-
-.twitter {
-  background: #1DA1F2;
-}
-
-.linkedin {
-  background: #0077B5;
-}
-
-.facebook {
-  background: #1877F2;
-}
-
-.whatsapp {
-  background: #25D366;
-}
-
-.instagram {
-  background: #E4405F;
-}
-
-.social-btn:hover {
-  opacity: 0.8;
-}
-
-
 /* 🌟 Blog Footer */
 .blog-footer {
   text-align: center;
@@ -212,3 +163,103 @@ body {
     font-size: 1rem;
   }
 }
+
+.like-btn{
+  background: #ff6600;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.comment-btn{
+  background: #ff6600;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* 🌟 Blog Actions Container */
+.blog-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* 🌟 Share Container */
+.share-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* 🌟 Share Button */
+.share-btn {
+  background: #ff6600;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.share-btn:hover {
+  background: #e65c00;
+}
+
+/* 🌟 Share Dropdown */
+.share-dropdown {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background: #333;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  white-space: nowrap;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Show dropdown */
+.share-dropdown.show {
+  display: flex;
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* 🌟 Share Buttons */
+.share-dropdown a,
+.share-dropdown button {
+  background: none;
+  border: none;
+  display: inline-block;
+  margin: 5px;
+  padding: 8px;
+  color: white;
+  font-size: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.share-dropdown a:hover,
+.share-dropdown button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* 🌟 Social Media Colors */
+.twitter { color: #1DA1F2; }
+.reddit { color: #FF4500; }
+.linkedin { color: #0077b5; }
+.hackernews { color: #ff6600; }
+.facebook { color: #1877F2; }
+.whatsapp { color: #25D366; }
+.copy-link { color: #fff; }
