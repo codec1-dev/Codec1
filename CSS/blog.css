@@ -1,14 +1,214 @@
 /* 🌟 Blog Content */
-.blog-content {
-  max-width: 700px;
-  margin: 40px auto;
-  padding: 20px;
-  background: #2D3142;
-  border-radius: 10px;
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+/* 🌟 Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.blog-content img {
-  width: 100%;
-  border-radius: 10px;
+/* 🌟 Body Styling */
+body {
+  font-family: "Poppins", sans-serif;
+  background: #0a0a0a;
+  color: white;
+  line-height: 1.8;
+  padding: 20px;
+}
+
+/* 🌟 Blog Header */
+.blog-header {
+  text-align: center;
+  padding: 40px 0;
+  border-bottom: 3px solid #00f7ff;
+  text-shadow: 0 0 10px rgba(0, 247, 255, 0.3);
+}
+
+.blog-header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.blog-meta {
+  font-size: 1rem;
+  color: #ccc;
+  margin-top: 5px;
+}
+
+/* 🌟 Table of Contents */
+.toc {
+  text-align: center;
+  margin: 20px 350px;
+  background: #0a0a0a;
+  padding: auto;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 247, 255, 0.2);
+}
+
+.toc h2 {
+  font-size: 1.5rem;
+  color: #00f7ff;
+  margin-bottom: 10px;
+}
+
+.toc ul {
+  list-style: none;
+}
+
+.toc li {
+  padding: 8px 0;
+}
+
+.toc a {
+  color: #00f7ff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.toc a:hover {
+  text-decoration: underline;
+}
+
+/* 🌟 Blog Content */
+.blog-content {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.blog-content h2 {
+  font-size: 2rem;
+  margin-top: 30px;
+  color: #00f7ff;
+  border-bottom: 2px solid #00f7ff;
+  padding-bottom: 10px;
+}
+
+.blog-content p {
+  font-size: 1.1rem;
+  margin: 15px 0;
+  color: #ddd;
+}
+
+.blog-content ul {
+  padding-left: 20px;
+}
+
+.blog-content li {
+  margin: 10px 0;
+}
+
+/* 🌟 Call-to-Action (CTA) */
+.cta {
+  background: #00f7ff;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 40px;
+  box-shadow: 0px 4px 10px rgba(0, 247, 255, 0.3);
+}
+
+.cta p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.cta .btn {
+  display: inline-block;
+  background: black;
+  color: #00f7ff;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.cta .btn:hover {
+  background: #00c4cc;
+}
+
+
+
+/* 🌟 Social Share Buttons */
+.social-share {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-share span {
+  font-weight: bold;
+  color: #ccc;
+}
+
+.social-btn {
+  display: inline-block;
+  font-size: 1.2rem;
+  padding: 8px;
+  border-radius: 50%;
+  color: white;
+  transition: 0.3s;
+}
+
+.twitter {
+  background: #1DA1F2;
+}
+
+.linkedin {
+  background: #0077B5;
+}
+
+.facebook {
+  background: #1877F2;
+}
+
+.whatsapp {
+  background: #25D366;
+}
+
+.instagram {
+  background: #E4405F;
+}
+
+.social-btn:hover {
+  opacity: 0.8;
+}
+
+
+/* 🌟 Blog Footer */
+.blog-footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  border-top: 2px solid #00f7ff;
+}
+
+.blog-footer a {
+  color: #00f7ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.blog-footer a:hover {
+  text-decoration: underline;
+}
+
+/* 🌟 Responsive Design */
+@media (max-width: 768px) {
+  .blog-header h1 {
+    font-size: 2rem;
+  }
+
+  .blog-content {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .cta p {
+    font-size: 1rem;
+  }
 }
