@@ -1,63 +1,310 @@
+/* 🌟 Global Styles */
+:root {
+  --primary-color: #42a5f5;
+  --background: #f5f5f5;
+  --container-bg: #e6f7fa;
+  --text-dark: #333;
+  --text-light: #999;
+  --border-color: #ccc;
+  --card-shadow: rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* 🌟 Body */
+body {
+  background: var(--background);
+  color: var(--text-dark);
+  padding: 20px;
+}
+
 /* 🌟 Blog List */
 .blog-list {
-  max-width: 900px; /* Sets a max width to center content */
+  max-width: 900px;
   margin: auto;
   padding: 20px;
 }
 
-/* 🌟 Individual Blog Post */
+/* 🌟 Blog Post Card */
 .post {
   display: flex;
   align-items: center;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.3);
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 20px;
   transition: transform 0.3s ease-in-out;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 8px var(--card-shadow);
 }
 
-/* Hover effect */
+/* 🌟 Hover Effect */
 .post:hover {
   transform: scale(1.02);
 }
 
-/* Left-side image */
+/* 🌟 Blog Post Image */
 .post img {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   object-fit: cover;
   margin-right: 20px;
-  border-radius: 50%;
+  border-radius: 10px;
 }
 
-/* Right-side text */
+/* 🌟 Blog Info */
 .post-info {
   text-align: left;
   flex: 1;
 }
 
-/* Blog title */
+/* 🌟 Blog Title */
 .post-info h2 {
   font-size: 20px;
   margin: 0;
 }
 
-/* Blog title link */
+/* 🌟 Blog Title Link */
 .post-info a {
   text-decoration: none;
-  color: white;
+  color: var(--text-dark);
   font-weight: bold;
+  transition: 0.3s;
 }
 
-/* Blog title hover effect */
+/* 🌟 Blog Title Hover Effect */
 .post-info a:hover {
   color: #FACC15;
 }
 
-/* Blog preview text */
+/* 🌟 Blog Preview */
 .post-preview {
   font-size: 16px;
   margin-top: 8px;
-  color: #E4E4E7;
+  color: var(--text-light);
 }
+
+.container {
+  background: var(--container-bg);
+  padding: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.heading {
+  color: var(--text-dark);
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* 🌟 Search Container */
+.search-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+/* 🌟 Search Input */
+.search-input {
+  width: 100%;
+  height: 45px;
+  padding: 10px 45px 10px 15px; /* Space for icon */
+  border: 1px solid var(--border-color);
+  border-radius: 25px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+/* 🌟 Focus Effect */
+.search-input:focus {
+  outline: 2px solid var(--primary-color);
+}
+
+/* 🌟 Search Icon */
+.search-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: var(--text-light);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* 🌟 Search Icon Hover */
+.search-icon:hover {
+  color: var(--primary-color);
+}
+
+/* 🌟 Category Tags */
+.tags-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* 🌟 Individual Tag */
+.tag {
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 8px 15px;
+  font-size: 14px;
+  color: var(--text-dark);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* 🌟 Tag Hover Effect */
+.tag:hover {
+  background: #e3f2fd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 🌟 Header */
+.header {
+  padding: 20px;
+  text-align: left;
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  margin-left: 5%;
+}
+
+/* 🌟 Section Titles */
+.category h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 40px;
+}
+
+/* 🌟 Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 0 40px 40px;
+}
+
+/* 🌟 Card Styling */
+.card {
+  background: linear-gradient(45deg, #40c4ff, #4caf50);
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0px 4px 8px var(--card-shadow);
+}
+
+/* 🌟 Different Gradient Colors for Each Card */
+.card:nth-child(2) {
+  background: linear-gradient(45deg, #ab47bc, #42a5f5);
+}
+.card:nth-child(3) {
+  background: linear-gradient(45deg, #ff9800, #f06292);
+}
+.card:nth-child(4) {
+  background: linear-gradient(45deg, #ff4081, #8e24aa);
+}
+.card:nth-child(5) {
+  background: linear-gradient(45deg, #4caf50, #00bcd4);
+}
+.card:nth-child(6) {
+  background: linear-gradient(45deg, #e91e63, #ff5722);
+}
+.card:nth-child(7) {
+  background: linear-gradient(45deg, #3f51b5, #2196f3);
+}
+.card:nth-child(8) {
+  background: linear-gradient(45deg, #ffc107, #ffeb3b);
+}
+
+/* 🌟 Hover Effect */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px var(--card-shadow);
+}
+
+/* 🌟 Arrow Button */
+.arrow {
+  background: white;
+  color: black;
+  padding: 8px;
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/* 🌟 Arrow Hover Effect */
+.card:hover .arrow {
+  background: #333;
+  color: white;
+}
+
+/* 🌟 Responsive Design */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+
+  .post {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .post img {
+    margin-bottom: 10px;
+  }
+
+  .search-input {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .tags-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tag {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* 🌟 Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
