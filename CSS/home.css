@@ -106,12 +106,13 @@ body {
 
 /* 🌟 Search Container */
 .search-container {
+  background-color: var(--container-bg);
   display: flex;
   justify-content: center;
   position: relative;
   width: 100%;
   max-width: 500px;
-  margin: 20px auto;
+  margin: 15px auto;
 }
 
 /* 🌟 Search Input */
