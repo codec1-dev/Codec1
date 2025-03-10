@@ -1,70 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- 🌟 Essential Meta Tags -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- 🌟 Title Tag (Max 60 characters) -->
-    <title>Codec1 Tech Blog | Programming, Web Development, AI & More</title>
+<head>
+  <!-- 🌟 Essential Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- 🌟 Meta Description (Max 160 characters) -->
-    <meta
-      name="description"
-      content="Codec1 Tech Blog provides the latest coding tutorials, programming tips, AI trends, web development guides, and tech tools to help developers grow."
-    />
+  <!-- 🌟 Title Tag (Max 60 characters) -->
+  <title>Codec1 Tech Blog | Programming, Web Development, AI & More</title>
 
-    <!-- 🌟 Keywords (SEO-Optimized) -->
-    <meta
-      name="keywords"
-      content="tech blog, programming tutorials, web development, AI trends, JavaScript, Python, data science, coding tips, machine learning, dev tools, software development"
-    />
+  <!-- 🌟 Meta Description (Max 160 characters) -->
+  <meta name="description"
+    content="Codec1 Tech Blog provides the latest coding tutorials, programming tips, AI trends, web development guides, and tech tools to help developers grow." />
 
-    <!-- 🌟 Author -->
-    <meta name="author" content="Codec1" />
+  <!-- 🌟 Keywords (SEO-Optimized) -->
+  <meta name="keywords"
+    content="tech blog, programming tutorials, web development, AI trends, JavaScript, Python, data science, coding tips, machine learning, dev tools, software development" />
 
-    <!-- 🌟 Canonical URL (Avoid Duplicate Content Issues) -->
-    <link rel="canonical" href="https://codec1.netlify.app/" />
+  <!-- 🌟 Author -->
+  <meta name="author" content="Codec1" />
 
-    <!-- 🌟 Open Graph (OG) Tags for Social Media -->
-    <meta
-      property="og:title"
-      content="Codec1 Tech Blog | Learn Coding, AI, Web Dev & More"
-    />
-    <meta
-      property="og:description"
-      content="Explore coding tutorials, web development guides, AI & machine learning trends, and developer tools at Codec1 Tech Blog."
-    />
-    <meta
-      property="og:image"
-      content="https://codec1.netlify.app/images/logo.png"
-    />
-    <meta property="og:url" content="https://codec1.netlify.app/" />
-    <meta property="og:type" content="website" />
+  <!-- 🌟 Canonical URL (Avoid Duplicate Content Issues) -->
+  <link rel="canonical" href="https://codec1.netlify.app/" />
 
-    <!-- 🌟 Twitter Card for Better Social Sharing -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="Codec1 Tech Blog | Learn Coding, AI, Web Dev & More"
-    />
-    <meta
-      name="twitter:description"
-      content="Explore coding tutorials, web development guides, AI & machine learning trends, and developer tools at Codec1 Tech Blog."
-    />
-    <meta
-      name="twitter:image"
-      content="https://www.codec1.com/images/blog-thumbnail.jpg"
-    />
+  <!-- 🌟 Open Graph (OG) Tags for Social Media -->
+  <meta property="og:title" content="Codec1 Tech Blog | Learn Coding, AI, Web Dev & More" />
+  <meta property="og:description"
+    content="Explore coding tutorials, web development guides, AI & machine learning trends, and developer tools at Codec1 Tech Blog." />
+  <meta property="og:image" content="https://codec1.netlify.app/images/logo.png" />
+  <meta property="og:url" content="https://codec1.netlify.app/" />
+  <meta property="og:type" content="website" />
 
-    <!-- 🌟 Favicon (Change the URL to your actual favicon) -->
-    <link rel="icon" type="image/png" href="IMAGES/logo.png" />
+  <!-- 🌟 Twitter Card for Better Social Sharing -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Codec1 Tech Blog | Learn Coding, AI, Web Dev & More" />
+  <meta name="twitter:description"
+    content="Explore coding tutorials, web development guides, AI & machine learning trends, and developer tools at Codec1 Tech Blog." />
+  <meta name="twitter:image" content="https://www.codec1.com/images/blog-thumbnail.jpg" />
 
-    <!-- 🌟 Robots Meta Tag (For Search Engine Indexing) -->
-    <meta name="robots" content="index, follow" />
+  <!-- 🌟 Favicon (Change the URL to your actual favicon) -->
+  <link rel="icon" type="image/png" href="IMAGES/logo.png" />
 
-    <!-- 🌟 Schema Markup (For Rich Results in Google) -->
-    <script type="application/ld+json">
+  <!-- 🌟 Robots Meta Tag (For Search Engine Indexing) -->
+  <meta name="robots" content="index, follow" />
+
+  <!-- 🌟 Schema Markup (For Rich Results in Google) -->
+  <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Blog",
@@ -83,145 +64,137 @@
       }
     </script>
 
-    <!-- 🌟 Stylesheet -->
-    <link rel="stylesheet" href="css/home.css" />
-    <link rel="stylesheet" href="css/general.css" />
-  </head>
+  <!-- 🌟 Stylesheet -->
+  <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="css/general.css" />
 
-  <body>
-<div></div>    
 
-    <div class="container">
-      <h1 class="heading">Hello, What Do You Want To Learn?</h1>
+  <!-- Include JavaScript -->
+  <script defer src="js/script.js"></script>
+</head>
 
-      <div class="search-container">
-        <input
-          type="text"
-          class="search-input"
-          placeholder="Data Str..."
-          id="searchInput"
-          aria-label="Search for learning topics"
-        />
-        <button onclick="searchBlogs()" class="search-icon">🔍</button>
-      </div>
+<body>
+  <div id="header"></div>
 
-      <div class="tags-container">
-        <button class="tag">Machine & ML</button>
-        <button class="tag">Computer Vision</button>
-        <button class="tag">AId: Linear Class...</button>
-      </div>
+  <div class="container">
+    <h1 class="heading">Hello, What Do You Want To Learn?</h1>
+
+    <div class="search-container">
+      <input type="text" class="search-input" placeholder="Data Str..." id="searchInput"
+        aria-label="Search for learning topics" />
+      <button onclick="searchBlogs()" class="search-icon">🔍</button>
     </div>
 
-    <!-- 🌟 Header -->
+    <div class="tags-container">
+      <button class="tag">Machine & ML</button>
+      <button class="tag">Computer Vision</button>
+      <button class="tag">AId: Linear Class...</button>
+    </div>
+  </div>
 
-    <h1 class="header">Explore Blog</h1>
+  <!-- 🌟 Header -->
 
-    <!-- 🌟 Explore Section -->
-    <section class="category">
-      <h2>Featured Blog Topics</h2>
-      <div class="grid">
-        <div class="card feature-card" data-category="dsa">
-          Data Structure & Algorithms <span class="arrow">→</span>
-        </div>
-        <div class="card feature-card" data-category="practice-dsa">
-          Practice DSA <span class="arrow">→</span>
-        </div>
-        <div class="card feature-card" data-category="web-dev">
-          Web Development <span class="arrow">→</span>
-        </div>
-        <div class="card feature-card" data-category="ai-ml">
-          AI ML & Data Science <span class="arrow">→</span>
-        </div>
-        <div class="card feature-card" data-category="python">
-          Python <span class="arrow">→</span>
-        </div>
-        <div class="card feature-card" data-category="machine-learning">
-          Machine Learning <span class="arrow">→</span>
-        </div>
-        <div class="card feature-card" data-category="system-design">
-          System Design <span class="arrow">→</span>
-        </div>
-        <div class="card feature-card" data-category="devops">
-          DevOps <span class="arrow">→</span>
-        </div>
+  <h1 class="header">Explore Blog</h1>
+
+  <!-- 🌟 Explore Section -->
+  <section class="category">
+    <h2>Featured Blog Topics</h2>
+    <div class="grid">
+      <div class="card feature-card" data-category="dsa">
+        Data Structure & Algorithms <span class="arrow">→</span>
       </div>
-    </section>
-
-    <!-- 🌟 Web Development Section -->
-    <section class="category">
-      <h2>Web Development</h2>
-      <div class="grid">
-        <div class="card">JavaScript <span class="arrow">→</span></div>
-        <div class="card">HTML <span class="arrow">→</span></div>
-        <div class="card">CSS <span class="arrow">→</span></div>
-        <div class="card">ReactJS <span class="arrow">→</span></div>
-        <div class="card">Node.js <span class="arrow">→</span></div>
-        <div class="card">Django <span class="arrow">→</span></div>
-        <div class="card">
-          Frontend Development <span class="arrow">→</span>
-        </div>
-        <div class="card">Backend Development <span class="arrow">→</span></div>
+      <div class="card feature-card" data-category="practice-dsa">
+        Practice DSA <span class="arrow">→</span>
       </div>
+      <div class="card feature-card" data-category="web-dev">
+        Web Development <span class="arrow">→</span>
+      </div>
+      <div class="card feature-card" data-category="ai-ml">
+        AI ML & Data Science <span class="arrow">→</span>
+      </div>
+      <div class="card feature-card" data-category="python">
+        Python <span class="arrow">→</span>
+      </div>
+      <div class="card feature-card" data-category="machine-learning">
+        Machine Learning <span class="arrow">→</span>
+      </div>
+      <div class="card feature-card" data-category="system-design">
+        System Design <span class="arrow">→</span>
+      </div>
+      <div class="card feature-card" data-category="devops">
+        DevOps <span class="arrow">→</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🌟 Web Development Section -->
+  <section class="category">
+    <h2>Web Development</h2>
+    <div class="grid">
+      <div class="card">JavaScript <span class="arrow">→</span></div>
+      <div class="card">HTML <span class="arrow">→</span></div>
+      <div class="card">CSS <span class="arrow">→</span></div>
+      <div class="card">ReactJS <span class="arrow">→</span></div>
+      <div class="card">Node.js <span class="arrow">→</span></div>
+      <div class="card">Django <span class="arrow">→</span></div>
+      <div class="card">
+        Frontend Development <span class="arrow">→</span>
+      </div>
+      <div class="card">Backend Development <span class="arrow">→</span></div>
+    </div>
+  </section>
+
+  <main>
+    <h2 class="subheading">
+      Learn how to use the latest tech tools to enhance your skills
+    </h2>
+
+    <section class="blog-list" id="blogContainer">
+      <article class="post">
+        <img src="images/images.png" alt="Javascript Fundamentals" />
+        <div class="post-info">
+          <h2>
+            <a href="blogs/master-javascript.html">How to Master JavaScript for Web Development in 2025</a>
+          </h2>
+          <p class="post-preview">
+            JavaScript is the backbone of modern web development. Whether
+            you're a beginner or an experienced developer, mastering
+            JavaScript in 2025 is essential for building dynamic and
+            interactive websites.
+          </p>
+        </div>
+      </article>
+
+      <article class="post">
+        <img src="images/images.png" alt="Responsive Design" />
+        <div class="post-info">
+          <h2>
+            <a href="blogs/RESPONSIVE-DESIGN.HTML">What is Responsive Design?</a>
+          </h2>
+          <p class="post-preview">
+            Responsive design ensures your website looks good on all
+            devices...
+          </p>
+        </div>
+      </article>
+
+      <article class="post">
+        <img src="images/images.png" alt="CSS Animations" />
+        <div class="post-info">
+          <h2>
+            <a href="blogs/CSS-ANIMATION.HTML">CSS Animations for Beginners</a>
+          </h2>
+          <p class="post-preview">
+            Learn how to bring life to your website with cool CSS
+            animations...
+          </p>
+        </div>
+      </article>
     </section>
+  </main>
 
-    <main>
-      <h2 class="subheading">
-        Learn how to use the latest tech tools to enhance your skills
-      </h2>
+  <div id="footer"></div>
 
-      <section class="blog-list" id="blogContainer">
-        <article class="post">
-          <img src="images/images.png" alt="Javascript Fundamentals" />
-          <div class="post-info">
-            <h2>
-              <a href="blogs/master-javascript.html"
-                >How to Master JavaScript for Web Development in 2025</a
-              >
-            </h2>
-            <p class="post-preview">
-              JavaScript is the backbone of modern web development. Whether
-              you're a beginner or an experienced developer, mastering
-              JavaScript in 2025 is essential for building dynamic and
-              interactive websites.
-            </p>
-          </div>
-        </article>
+</body>
 
-        <article class="post">
-          <img src="images/images.png" alt="Responsive Design" />
-          <div class="post-info">
-            <h2>
-              <a href="blogs/RESPONSIVE-DESIGN.HTML"
-                >What is Responsive Design?</a
-              >
-            </h2>
-            <p class="post-preview">
-              Responsive design ensures your website looks good on all
-              devices...
-            </p>
-          </div>
-        </article>
-
-        <article class="post">
-          <img src="images/images.png" alt="CSS Animations" />
-          <div class="post-info">
-            <h2>
-              <a href="blogs/CSS-ANIMATION.HTML"
-                >CSS Animations for Beginners</a
-              >
-            </h2>
-            <p class="post-preview">
-              Learn how to bring life to your website with cool CSS
-              animations...
-            </p>
-          </div>
-        </article>
-      </section>
-    </main>
-
-   
-
-    <!-- Include JavaScript -->
-    <script defer src="js/script.js"></script>
-  </body>
 </html>
