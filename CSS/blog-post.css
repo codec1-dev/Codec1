@@ -1,0 +1,265 @@
+/* 🌟 Blog Content */
+/* 🌟 Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 🌟 Body Styling */
+body {
+  font-family: "Poppins", sans-serif;
+  background: #0a0a0a;
+  color: white;
+  line-height: 1.8;
+  padding: 20px;
+}
+
+/* 🌟 Blog Header */
+.blog-header {
+  text-align: center;
+  padding: 40px 0;
+  border-bottom: 3px solid #00f7ff;
+  text-shadow: 0 0 10px rgba(0, 247, 255, 0.3);
+}
+
+.blog-header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.blog-meta {
+  font-size: 1rem;
+  color: #ccc;
+  margin-top: 5px;
+}
+
+/* 🌟 Table of Contents */
+.toc {
+  max-width: 600px; /* Set max width for better readability */
+  margin: 20px auto; /* Centering */
+  background: #111; 
+  padding: 20PX;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 247, 255, 0.2);
+}
+
+.toc h2 {
+  font-size: 1.5rem;
+  color: #00f7ff;
+  margin-bottom: 10px;
+}
+
+.toc ul {
+  list-style: none;
+}
+
+.toc li {
+  padding: 8px 0;
+}
+
+.toc a {
+  color: #00f7ff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.toc a:hover {
+  text-decoration: underline;
+}
+
+/* 🌟 Blog Content */
+.blog-content {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.blog-content h2 {
+  font-size: 2rem;
+  margin-top: 30px;
+  color: #00f7ff;
+  border-bottom: 2px solid #00f7ff;
+  padding-bottom: 10px;
+}
+
+.blog-content p {
+  font-size: 1.1rem;
+  margin: 15px 0;
+  color: #ddd;
+}
+
+.blog-content ul {
+  padding-left: 20px;
+}
+
+.blog-content li {
+  margin: 10px 0;
+}
+
+/* 🌟 Call-to-Action (CTA) */
+.cta {
+  background: #00f7ff;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 40px;
+  box-shadow: 0px 4px 10px rgba(0, 247, 255, 0.3);
+}
+
+.cta p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.cta .btn {
+  display: inline-block;
+  background: black;
+  color: #00f7ff;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.cta .btn:hover {
+  background: #00c4cc;
+}
+
+/* 🌟 Blog Footer */
+.blog-footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  border-top: 2px solid #00f7ff;
+}
+
+.blog-footer a {
+  color: #00f7ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.blog-footer a:hover {
+  text-decoration: underline;
+}
+
+/* 🌟 Responsive Design */
+@media (max-width: 768px) {
+  .blog-header h1 {
+    font-size: 2rem;
+  }
+
+  .blog-content {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .cta p {
+    font-size: 1rem;
+  }
+}
+
+.like-btn{
+  background: #ff6600;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.comment-btn{
+  background: #ff6600;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* 🌟 Blog Actions Container */
+.blog-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* 🌟 Share Container */
+.share-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* 🌟 Share Button */
+.share-btn {
+  background: #ff6600;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.share-btn:hover {
+  background: #e65c00;
+}
+
+/* 🌟 Share Dropdown */
+.share-dropdown {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background: #333;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  white-space: nowrap;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Show dropdown */
+.share-dropdown.show {
+  display: flex;
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* 🌟 Share Buttons */
+.share-dropdown a,
+.share-dropdown button {
+  background: none;
+  border: none;
+  display: inline-block;
+  margin: 5px;
+  padding: 8px;
+  color: white;
+  font-size: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.share-dropdown a:hover,
+.share-dropdown button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* 🌟 Social Media Colors */
+.twitter { color: #1DA1F2; }
+.reddit { color: #FF4500; }
+.linkedin { color: #0077b5; }
+.hackernews { color: #ff6600; }
+.facebook { color: #1877F2; }
+.whatsapp { color: #25D366; }
+.copy-link { color: #fff; }

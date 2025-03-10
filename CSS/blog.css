@@ -1,265 +1,126 @@
-/* 🌟 Blog Content */
-/* 🌟 Global Reset */
+/* 🌟 General Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 /* 🌟 Body Styling */
 body {
-  font-family: "Poppins", sans-serif;
-  background: #0a0a0a;
+  background: #121212;
   color: white;
-  line-height: 1.8;
   padding: 20px;
 }
 
-/* 🌟 Blog Header */
-.blog-header {
+/* 🌟 Section Titles */
+h2 {
   text-align: center;
-  padding: 40px 0;
-  border-bottom: 3px solid #00f7ff;
-  text-shadow: 0 0 10px rgba(0, 247, 255, 0.3);
-}
-
-.blog-header h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
-.blog-meta {
-  font-size: 1rem;
-  color: #ccc;
-  margin-top: 5px;
-}
-
-/* 🌟 Table of Contents */
-.toc {
-  max-width: 600px; /* Set max width for better readability */
-  margin: 20px auto; /* Centering */
-  background: #111; 
-  padding: 20PX;
-  border-radius: 8px;
-  box-shadow: 0px 4px 10px rgba(0, 247, 255, 0.2);
-}
-
-.toc h2 {
-  font-size: 1.5rem;
+  font-size: 28px;
+  margin-bottom: 20px;
   color: #00f7ff;
-  margin-bottom: 10px;
 }
 
-.toc ul {
-  list-style: none;
+/* 🌟 Categories Section */
+.categories {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-.toc li {
-  padding: 8px 0;
+.category-list {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
-.toc a {
-  color: #00f7ff;
+.category-list a {
   text-decoration: none;
-  font-weight: 600;
-  transition: 0.3s;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 20px;
+  transition: 0.3s ease;
+  font-weight: 300;
+  background: rgba(255, 255, 255, 0.2);
 }
 
-.toc a:hover {
-  text-decoration: underline;
+.category-list a:hover {
+  background: #00f7ff;
+  color: black;
+}
+
+/* 🌟 Blog Grid */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* 🌟 Blog Card */
+.blog-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* 🌟 Hover Effect */
+.blog-card:hover {
+  transform: scale(1.02);
+}
+
+/* 🌟 Blog Image */
+.blog-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
 /* 🌟 Blog Content */
 .blog-content {
-  max-width: 800px;
-  margin: 30px auto;
-  padding: 20px;
+  padding: 15px;
 }
 
-.blog-content h2 {
-  font-size: 2rem;
-  margin-top: 30px;
-  color: #00f7ff;
-  border-bottom: 2px solid #00f7ff;
-  padding-bottom: 10px;
+/* 🌟 Blog Title */
+.blog-content h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
 }
 
-.blog-content p {
-  font-size: 1.1rem;
-  margin: 15px 0;
+/* 🌟 Blog Meta */
+.blog-meta {
+  font-size: 14px;
+  color: #bbb;
+  margin-bottom: 10px;
+}
+
+/* 🌟 Blog Description */
+.blog-description {
+  font-size: 14px;
   color: #ddd;
+  margin-bottom: 15px;
 }
 
-.blog-content ul {
-  padding-left: 20px;
-}
-
-.blog-content li {
-  margin: 10px 0;
-}
-
-/* 🌟 Call-to-Action (CTA) */
-.cta {
-  background: #00f7ff;
-  color: black;
-  text-align: center;
-  padding: 20px;
-  border-radius: 8px;
-  margin-top: 40px;
-  box-shadow: 0px 4px 10px rgba(0, 247, 255, 0.3);
-}
-
-.cta p {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-.cta .btn {
+/* 🌟 Read More Button */
+.read-more {
   display: inline-block;
-  background: black;
-  color: #00f7ff;
-  padding: 10px 20px;
-  margin-top: 10px;
-  border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
-  transition: 0.3s;
+  color: #ffcc00;
+  transition: color 0.3s;
 }
 
-.cta .btn:hover {
-  background: #00c4cc;
-}
-
-/* 🌟 Blog Footer */
-.blog-footer {
-  text-align: center;
-  margin-top: 50px;
-  padding: 20px;
-  border-top: 2px solid #00f7ff;
-}
-
-.blog-footer a {
-  color: #00f7ff;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.blog-footer a:hover {
-  text-decoration: underline;
+.read-more:hover {
+  color: #ff6600;
 }
 
 /* 🌟 Responsive Design */
 @media (max-width: 768px) {
-  .blog-header h1 {
-    font-size: 2rem;
-  }
-
-  .blog-content {
-    width: 100%;
-    padding: 10px;
-  }
-
-  .cta p {
-    font-size: 1rem;
+  .blog-grid {
+      grid-template-columns: 1fr;
+      padding: 0 20px;
   }
 }
-
-.like-btn{
-  background: #ff6600;
-  color: white;
-  border: none;
-  padding: 8px 12px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-.comment-btn{
-  background: #ff6600;
-  color: white;
-  border: none;
-  padding: 8px 12px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-/* 🌟 Blog Actions Container */
-.blog-actions {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-
-/* 🌟 Share Container */
-.share-container {
-  position: relative;
-  display: inline-block;
-}
-
-/* 🌟 Share Button */
-.share-btn {
-  background: #ff6600;
-  color: white;
-  border: none;
-  padding: 8px 12px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.share-btn:hover {
-  background: #e65c00;
-}
-
-/* 🌟 Share Dropdown */
-.share-dropdown {
-  display: none;
-  position: absolute;
-  top: 40px;
-  left: 0;
-  background: #333;
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  z-index: 100;
-  white-space: nowrap;
-  opacity: 0;
-  transform: scale(0.9);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-/* Show dropdown */
-.share-dropdown.show {
-  display: flex;
-  opacity: 1;
-  transform: scale(1);
-}
-
-/* 🌟 Share Buttons */
-.share-dropdown a,
-.share-dropdown button {
-  background: none;
-  border: none;
-  display: inline-block;
-  margin: 5px;
-  padding: 8px;
-  color: white;
-  font-size: 18px;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.share-dropdown a:hover,
-.share-dropdown button:hover {
-  background: rgba(255, 255, 255, 0.2);
-}
-
-/* 🌟 Social Media Colors */
-.twitter { color: #1DA1F2; }
-.reddit { color: #FF4500; }
-.linkedin { color: #0077b5; }
-.hackernews { color: #ff6600; }
-.facebook { color: #1877F2; }
-.whatsapp { color: #25D366; }
-.copy-link { color: #fff; }
