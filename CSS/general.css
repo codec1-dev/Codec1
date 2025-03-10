@@ -2,7 +2,6 @@
 body {
   font-family: 'Poppins', sans-serif;
   background: #2980B9;
-  /* Modern blue background */
   color: white;
   margin: 0;
   padding: 0;
@@ -64,6 +63,12 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #00f7ff;
+}
+
+/* Active Link Styling */
+.nav-link.active {
+  color: #00f7ff;
+  font-weight: bold;
 }
 
 /* 🌟 Dropdown Menu */

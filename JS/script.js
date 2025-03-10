@@ -1,17 +1,39 @@
-// Function to load header and footer
 document.addEventListener("DOMContentLoaded", function () {
-  fetch("header.html")
-      .then(response => response.text())
-      .then(data => {
-          document.getElementById("header").innerHTML = data;
-      });
+    // Dynamically load header and footer
+    fetch("header.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("header").innerHTML = data;
+            highlightActiveNavLink(); // Call function after loading header
+        });
 
-  fetch("footer.html")
-      .then(response => response.text())
-      .then(data => {
-          document.getElementById("footer").innerHTML = data;
-      });
+    fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+        });
+
+    // Function to highlight the active navigation link
+    function highlightActiveNavLink() {
+        let currentPage = window.location.pathname.split("/").pop(); // Get current filename
+
+        let navLinks = {
+            "index.html": "home-link",
+            "about.html": "about-link",
+            "blog.html": "blog-link",
+            "contact.html": "contact-link",
+            "web-development.html": "webdev-link",
+            "python.html": "python-link",
+            "javascript.html": "js-link",
+            "css.html": "css-link"
+        };
+
+        if (navLinks[currentPage]) {
+            document.getElementById(navLinks[currentPage]).classList.add("active");
+        }
+    }
 });
+
 
 // Dark Mode Toggle
 document.addEventListener("DOMContentLoaded", () => {
