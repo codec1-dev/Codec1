@@ -6,10 +6,10 @@
     <title>Blog Page</title>
     <link rel="stylesheet" href="css/blog.css">
     <link rel="stylesheet" href="css/general.css">
-    <script src="JS/script.js"></script>
+    <script src="JS/script.js" defer></script>
 </head>
 <body>
-    <div id="header"></div>
+    <div id="header"></div> <!-- Header Will Load Here -->
 
     <!-- 🌟 Categories Section -->
     <section class="categories">
@@ -24,73 +24,102 @@
         </div>
     </section>
 
-    <!-- 🌟 Featured Blogs Section -->
+    <!-- 🌟 Featured Blogs Section (3x3 Grid) -->
     <section class="featured-blogs">
         <h2>Featured Blogs</h2>
         <div class="blog-grid">
             <div class="blog-card">
                 <img src="image1.jpg" alt="Blog Image">
                 <div class="blog-content">
-                    <h3>Are C and Embedded C Different?</h3>
-                    <p class="blog-meta">Mar 3, 2025 • 2 min read • 2 views</p>
-                    <p class="blog-description">C and Embedded C have similar syntax but serve different purposes...</p>
+                    <h3>Mastering JavaScript</h3>
+                    <p class="blog-meta">Mar 3, 2025 • 4 min read</p>
+                    <p class="blog-description">Learn the core JavaScript concepts...</p>
                     <a href="#" class="read-more">Read More</a>
                 </div>
             </div>
+
             <div class="blog-card">
                 <img src="image2.jpg" alt="Blog Image">
                 <div class="blog-content">
-                    <h3>Beginner's Guide to Web Dev</h3>
-                    <p class="blog-meta">Mar 3, 2025 • 4 min read • 7 views</p>
-                    <p class="blog-description">Web development consists of Frontend and Backend...</p>
+                    <h3>CSS Grid Layout</h3>
+                    <p class="blog-meta">Feb 28, 2025 • 3 min read</p>
+                    <p class="blog-description">Design modern web layouts...</p>
                     <a href="#" class="read-more">Read More</a>
                 </div>
             </div>
+
             <div class="blog-card">
                 <img src="image3.jpg" alt="Blog Image">
                 <div class="blog-content">
-                    <h3>Understanding CSS Grid</h3>
-                    <p class="blog-meta">Feb 28, 2025 • 3 min read • 6 views</p>
-                    <p class="blog-description">CSS Grid is a powerful layout system for responsive design...</p>
+                    <h3>Python for Data Science</h3>
+                    <p class="blog-meta">Feb 22, 2025 • 5 min read</p>
+                    <p class="blog-description">Use Python to analyze data...</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <img src="image4.jpg" alt="Blog Image">
+                <div class="blog-content">
+                    <h3>Web Dev Guide</h3>
+                    <p class="blog-meta">Mar 5, 2025 • 6 min read</p>
+                    <p class="blog-description">Frontend & Backend explained...</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <img src="image5.jpg" alt="Blog Image">
+                <div class="blog-content">
+                    <h3>React vs Angular</h3>
+                    <p class="blog-meta">Mar 2, 2025 • 4 min read</p>
+                    <p class="blog-description">Compare these two frameworks...</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <img src="image6.jpg" alt="Blog Image">
+                <div class="blog-content">
+                    <h3>Machine Learning Basics</h3>
+                    <p class="blog-meta">Feb 27, 2025 • 5 min read</p>
+                    <p class="blog-description">Introduction to ML concepts...</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <img src="image7.jpg" alt="Blog Image">
+                <div class="blog-content">
+                    <h3>Cyber Security Guide</h3>
+                    <p class="blog-meta">Feb 26, 2025 • 3 min read</p>
+                    <p class="blog-description">Protect yourself online...</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <img src="image8.jpg" alt="Blog Image">
+                <div class="blog-content">
+                    <h3>Full-Stack Development</h3>
+                    <p class="blog-meta">Feb 25, 2025 • 4 min read</p>
+                    <p class="blog-description">Learn frontend & backend...</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <img src="image9.jpg" alt="Blog Image">
+                <div class="blog-content">
+                    <h3>Cloud Computing Guide</h3>
+                    <p class="blog-meta">Feb 24, 2025 • 6 min read</p>
+                    <p class="blog-description">AWS, Azure & Google Cloud...</p>
                     <a href="#" class="read-more">Read More</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 🌟 Latest Blogs Section -->
-    <section class="latest-blogs">
-        <h2>Latest Blogs</h2>
-        <div class="blog-grid">
-            <div class="blog-card">
-                <img src="image4.jpg" alt="Blog Image">
-                <div class="blog-content">
-                    <h3>A Guide to CSS Flexbox</h3>
-                    <p class="blog-meta">Feb 27, 2025 • 3 min read • 4 views</p>
-                    <p class="blog-description">CSS Flexbox makes it easy to align elements in a container...</p>
-                    <a href="#" class="read-more">Read More</a>
-                </div>
-            </div>
-            <div class="blog-card">
-                <img src="image5.jpg" alt="Blog Image">
-                <div class="blog-content">
-                    <h3>JavaScript ES6 Features</h3>
-                    <p class="blog-meta">Feb 25, 2025 • 5 min read • 8 views</p>
-                    <p class="blog-description">ES6 introduced features like let, const, arrow functions...</p>
-                    <a href="#" class="read-more">Read More</a>
-                </div>
-            </div>
-            <div class="blog-card">
-                <img src="image6.jpg" alt="Blog Image">
-                <div class="blog-content">
-                    <h3>Python for Data Science</h3>
-                    <p class="blog-meta">Feb 22, 2025 • 6 min read • 10 views</p>
-                    <p class="blog-description">Python is widely used for data analysis, visualization...</p>
-                    <a href="#" class="read-more">Read More</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <div id="footer"></div>
+    <div id="footer"></div> <!-- Footer Will Load Here -->
 </body>
 </html>
